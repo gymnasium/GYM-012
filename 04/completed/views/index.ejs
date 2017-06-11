@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO List</title>
+</head>
+<body>
+
+	<h2>TODO List</h2>
+	
+	<ol>
+		<% for( var i in tasks ) { %>
+		<li><input type="text" name="tasks[]" value="<%= tasks[ i ]; %>" /></li>
+		<% } %>
+	</ol>
+	
+</body>
+</html>
