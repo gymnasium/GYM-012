@@ -7,15 +7,14 @@
 
 	<h2>TODO List</h2>
 	
-	<form action="" method="post">
+	<form action="" method="post"
+		onkeydown=" if( event.keyCode == 13 ) this.submit(); ">
 	
 		<ol>
 			<% for( var i in tasks ) { %>
 			<li><input type="text" name="tasks[]" value="<%= tasks[ i ]; %>" /></li>
 			<% } %>
 		</ol>
-		
-		<button style="display:none;"></button>
 	
 	</form>
 	
